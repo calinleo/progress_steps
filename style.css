@@ -75,3 +75,28 @@ body {
     z-index: -1;
     transition: .8s ease;
 }
+
+.btn {
+    background-color: var(--line-border-fill);
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+
+.btn:active {
+    transform: scale(.95);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}
